@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "files": [
+          "src/services/email.service.ts"
+        ],
+        "createdAt": "2026-11-03T22:37:34.147Z",
+        "reason": "Claude decided: plantilla de correo; los clientes de email no cargan fuentes web, Arial es la pila segura"
+      }
+    ]
+  }
+}
