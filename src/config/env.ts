@@ -42,4 +42,9 @@ export const env = {
   CLOUDINARY_API_KEY: optional("CLOUDINARY_API_KEY", ""),
   CLOUDINARY_API_SECRET: optional("CLOUDINARY_API_SECRET", ""),
   CRON_SECRET: optional("CRON_SECRET", ""),
+  // Payphone (Cajita de Pagos). Sin token, el pago con tarjeta queda deshabilitado.
+  PAYPHONE_TOKEN: optional("PAYPHONE_TOKEN", ""),
+  PAYPHONE_STORE_ID: optional("PAYPHONE_STORE_ID", ""),
+  // A dónde avisar cada pedido nuevo (cocina / dueño). Vacío = ADMIN_EMAIL.
+  STORE_NOTIFY_EMAIL: optional("STORE_NOTIFY_EMAIL", ""),
 } as const;
