@@ -36,7 +36,7 @@ export async function listOrders(query: Record<string, unknown>) {
   if (query.since) {
     const since = new Date(String(query.since));
     if (isNaN(since.getTime())) throw new CustomError("Fecha 'since' inválida", 400);
-    filter.createdAt = { $gte: since };
+    filter.createdAt = { $gt: since };
   }
 
   const [items, total] = await Promise.all([
